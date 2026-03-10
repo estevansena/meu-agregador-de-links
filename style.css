@@ -63,8 +63,8 @@ body {
 .container {
     position: relative;
     z-index: 2;
-    padding: 40px;
-    width: 320px;
+    padding: 30px;
+    width: 300px;
     text-align: center;
 }
 
