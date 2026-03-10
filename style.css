@@ -32,6 +32,7 @@ body {
     object-fit: cover;
     filter: grayscale(100%);
     animation: colorize 8s ease-in-out forwards;
+    border-radius: 50%;
 }
 
 /* layout wrapper */
