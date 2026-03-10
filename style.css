@@ -153,13 +153,8 @@ a::after {
   transition: clip-path 500ms ease;
 }
 
-@keyframes colorize {
-  from {
-    filter: grayscale(0%);
-  }
-  to {
-    filter: grayscale(100%);
-  }
+a:hover {
+  --border-color: #f7f7f7;
 }
 
 h2 {
