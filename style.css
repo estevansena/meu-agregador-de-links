@@ -24,14 +24,13 @@ body {
 
 /* Avatar */
 #avatar {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-bottom: -100px;
     z-index: 2;
     position: relative;
     object-fit: cover;
     filter: grayscale(100%);
-    animation: colorize 8s ease-in-out forwards;
     border-radius: 50%;
 }
 
@@ -158,9 +157,15 @@ a:hover {
 }
 
 h2 {
-    color: #d35b15;
+    color: #ffffff;
     margin-bottom: 20px;
 }
+
+h3 {
+    color:  #d35b15;
+    margin-top: 20px;
+}
+
 
 h4 {
     color: #dbdbdb;
