@@ -4,31 +4,6 @@
 
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
-const sound = document.getElementById("hoverSound");
-sound.volume = 0.3;
-
-const links = document.querySelectorAll(".hover-sound");
-
-let audioUnlocked = false;
-
-// desbloqueia áudio na primeira interação
-document.addEventListener("pointermove", () => {
-  if (!audioUnlocked) {
-    sound.play().then(() => {
-      sound.pause();
-      sound.currentTime = 0;
-      audioUnlocked = true;
-    }).catch(()=>{});
-  }
-}, { once: true });
-
-// toca no hover
-links.forEach(link => {
-  link.addEventListener("mouseenter", () => {
-    sound.currentTime = 0;
-    sound.play().catch(()=>{});
-  });
-});
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
